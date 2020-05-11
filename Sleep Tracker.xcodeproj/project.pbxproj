@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0479ADA62469D023002BBF68 /* customCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0479ADA52469D023002BBF68 /* customCell.swift */; };
 		931C90C92468D17F000C6AF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C90C82468D17F000C6AF9 /* AppDelegate.swift */; };
 		931C90CB2468D17F000C6AF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C90CA2468D17F000C6AF9 /* SceneDelegate.swift */; };
 		931C90CD2468D17F000C6AF9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C90CC2468D17F000C6AF9 /* FirstViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0479ADA52469D023002BBF68 /* customCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customCell.swift; sourceTree = "<group>"; };
 		931C90C52468D17F000C6AF9 /* Sleep Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sleep Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		931C90C82468D17F000C6AF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		931C90CA2468D17F000C6AF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				931C90CA2468D17F000C6AF9 /* SceneDelegate.swift */,
 				931C90CC2468D17F000C6AF9 /* FirstViewController.swift */,
 				931C90CE2468D17F000C6AF9 /* SecondViewController.swift */,
+				0479ADA52469D023002BBF68 /* customCell.swift */,
 				931C90D02468D17F000C6AF9 /* Main.storyboard */,
 				931C90D32468D180000C6AF9 /* Assets.xcassets */,
 				931C90D52468D180000C6AF9 /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			files = (
 				931C90CF2468D17F000C6AF9 /* SecondViewController.swift in Sources */,
 				931C90CD2468D17F000C6AF9 /* FirstViewController.swift in Sources */,
+				0479ADA62469D023002BBF68 /* customCell.swift in Sources */,
 				931C90C92468D17F000C6AF9 /* AppDelegate.swift in Sources */,
 				931C90CB2468D17F000C6AF9 /* SceneDelegate.swift in Sources */,
 			);

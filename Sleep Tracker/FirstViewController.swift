@@ -8,9 +8,10 @@
 
 import UIKit
 
+public var formatter = DateFormatter()
+
 class FirstViewController: UIViewController {
 
-    let formatter = DateFormatter()
  
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,17 +27,15 @@ class FirstViewController: UIViewController {
     
     @IBOutlet weak var clock: UILabel!
     @IBOutlet weak var userWakeUp: UIDatePicker!
-    @IBAction func wakeUpChosen(_ sender: UIDatePicker) {
-
-        let wakeUpTime = userWakeUp.date
-        let sleepTime = formatter.string(from: wakeUpTime.addingTimeInterval(5 * 90))
-        let sleepTimeAlt = formatter.string(from: wakeUpTime.addingTimeInterval(6 * 90))
-        
-        let sleepString = "you should to go sleep at: " + sleepTime + "or" + sleepTimeAlt + "to feel refreshed in the morning"
-        
-        sleepPrint.text = sleepString
-    }
     @IBOutlet weak var sleepPrint: UILabel!
+    @IBAction func calcButton(_ sender: UIButton) {
+        let wakeUpTime = userWakeUp.date
+              let sleepTime = wakeUpTime.addingTimeInterval(-27000)
+              let sleepTimeAlt = wakeUpTime.addingTimeInterval(-32400)
+              let sleepString = "you should to go sleep at: " + formatter.string(from: sleepTime) + " or " + formatter.string(from: sleepTimeAlt) + " to feel refreshed in the morning"
+              
+              sleepPrint.text = sleepString
+    }
     
      @objc public func updateClock()
     {
